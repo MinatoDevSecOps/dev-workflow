@@ -1,0 +1,22 @@
+name: Schema generation
+
+on: workflow_dispatch
+
+jobs:
+  schema_generation:
+    environment: dev
+    runs-on: ubuntu-linux
+    container: google/cloud-sdk:alpine
+
+    steps:
+    - name: Checking out repo...
+      uses: action/checkout@v3
+
+    - name: Printing contents...
+      shell: sh
+      run: |
+        echo "Printing current directory content..."
+        ls -al *
+        
+
+    
