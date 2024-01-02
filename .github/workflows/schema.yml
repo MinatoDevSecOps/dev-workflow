@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   schema_generation:
     environment: dev
-    runs-on: ubuntu-linux
+    runs-on: ubuntu-latest
     container: google/cloud-sdk:alpine
 
     steps:
