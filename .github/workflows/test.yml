@@ -1,0 +1,13 @@
+name: Test
+
+on: workflow_dispatch
+
+jobs:
+  deployment:
+    environment: dev
+    runs-on: ubunut-latest
+
+    steps:
+    - name: First step
+      shell: sh
+      run: echo "Hello, friend. Hello, friend?"
