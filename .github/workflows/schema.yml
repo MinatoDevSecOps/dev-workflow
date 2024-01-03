@@ -28,7 +28,7 @@ jobs:
         cloud_run_url=$(gcloud run services describe githubci --platform managed --region europe-west1 --format 'value(status.url)')
         echo "[*] Cloud Run url : ${cloud_run_url}"
         echo "creating bq tables"
-        curl -X POST $cloud_run_url"/rest/deploy/setup?action=SEARCH" --fail-with-body
+        curl -X POST "${cloud_run_url}/rest/deploy/setup?action=SEARCH" --fail-with-body
         echo "Completed BQ/Search schema generation"
 
         
