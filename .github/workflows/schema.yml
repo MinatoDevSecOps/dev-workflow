@@ -26,7 +26,8 @@ jobs:
         more client-secret.json
         gcloud auth activate-service-account --key-file client-secret.json
         gcloud config set project vb-eva-gen
-        
+        cloud_run_url=$(gcloud run services describe attachmentcheck --platform managed --region europe-west1 --format 'value(status.url)')
+        echo "[*] Cloud Run url : ${cloud_run_url}"
 
         
       
