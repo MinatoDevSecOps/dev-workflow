@@ -12,10 +12,10 @@ jobs:
 
     - name: Printing content...
       run: |
-      ls -al
-      mkdir mydir
-      touch content
-      ls -al
+        ls -al
+        mkdir mydir
+        tocuh content
+        ls -al
 
   second-job:
     runs-on: ubuntu-latest
@@ -26,6 +26,6 @@ jobs:
 
     - name: Printing message...
       run: |
-      ls -al
-      echo "Hello, friend. Hello, friend?"
-      whoami
+        ls -al
+        echo "Hello, friend. Hello, friend?"
+        whoami
