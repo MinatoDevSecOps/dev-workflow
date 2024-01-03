@@ -14,7 +14,7 @@ jobs:
       run: |
         ls -al
         mkdir mydir
-        tocuh content
+        touch content
         ls -al
 
   second-job:
