@@ -13,7 +13,7 @@ jobs:
       shell: sh
       run: |
         echo "Printing current directory content..."
-        myvariable=${{vars.MYVARIABLE}}
+        myvariable="${{vars.MYVARIABLE}}"
         echo "[*] Content : ${myvariable}"
         echo "${myvariable}"
 
