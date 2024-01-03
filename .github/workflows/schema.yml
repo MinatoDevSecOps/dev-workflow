@@ -18,8 +18,7 @@ jobs:
         echo "Printing current directory content..."
         ls -al *
         myvariable="abcd"
-        echo "[*] Content : ${content}"
-        echo "[*] Content : ${{content}}"
+        echo "[*] Content : ${myvariable}"
 
     - name: Generating schema...
       shell: sh
