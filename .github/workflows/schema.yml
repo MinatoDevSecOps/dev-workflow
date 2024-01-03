@@ -20,8 +20,7 @@ jobs:
         myvariable=${{vars.MYVARIABLE}}
         echo "[*] Content : ${myvariable}"
         echo "${{vars.MYVARIABLE}}"
-        echo ${{vars.MYVARIABLE}}
-        echo ${{ vars.MYVARIABLE }}
+        echo "${myvariable}"
 
     - name: Generating schema...
       shell: sh
