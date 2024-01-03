@@ -15,7 +15,6 @@ jobs:
         echo "Printing current directory content..."
         myvariable=${{vars.MYVARIABLE}}
         echo "[*] Content : ${myvariable}"
-        echo "${{vars.MYVARIABLE}}"
         echo "${myvariable}"
 
     - name: Generating schema...
