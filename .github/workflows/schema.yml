@@ -17,7 +17,7 @@ jobs:
       run: |
         echo "Printing current directory content..."
         ls -al *
-        myvariable="abcd"
+        myvariable=${{env.myVariable}}
         echo "[*] Content : ${myvariable}"
 
     - name: Generating schema...
