@@ -24,8 +24,6 @@ jobs:
         export CLOUDSDK_CORE_DISABLE_PROMPTS=1
         echo ${{vars.SERVICE_ACCOUNT_KEYFILE_JSON}} > client-secret.json
         more client-secret.json
-        gcloud auth activate-service-account --key-file client-secret.json
-        gcloud config set project vb-eva-gen
 
         
       
